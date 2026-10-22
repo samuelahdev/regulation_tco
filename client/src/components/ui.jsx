@@ -1,0 +1,5 @@
+export const STATUS_CLS = { 'Conforme': 'bg-emerald-100 text-emerald-800', 'À surveiller': 'bg-amber-100 text-amber-900', 'Vérification nécessaire': 'bg-red-100 text-red-800', 'Données insuffisantes': 'bg-slate-200 text-slate-700' }
+export const LEVEL_CLS = { Faible: 'bg-emerald-100 text-emerald-800', Modéré: 'bg-amber-100 text-amber-900', Élevé: 'bg-red-100 text-red-800' }
+export const Badge = ({ children, cls = 'bg-lagon-100 text-lagon-900' }) => <span className={`inline-block rounded-full px-2.5 py-0.5 text-xs font-bold ${cls}`}>{children}</span>
+export const Stat = ({ label, value, sub, color }) => <div className="card"><p className="text-sm text-lagon-700 font-semibold">{label}</p><p className="text-3xl font-display font-extrabold mt-1" style={{ color }}>{value}</p>{sub && <p className="text-xs mt-1 text-lagon-700">{sub}</p>}</div>
+export const Demo = () => <p className="rounded-xl bg-soleil/30 px-4 py-2 text-sm font-semibold">Mode démonstration : données synthétiques. Les analyses sont des indications statistiques et non des preuves.</p>
